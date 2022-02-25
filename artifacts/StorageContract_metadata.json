@@ -1,0 +1,154 @@
+{
+	"compiler": {
+		"version": "0.8.10+commit.fc410830"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "assets",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "did",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "parent",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "active",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "assetDid",
+						"type": "address"
+					}
+				],
+				"name": "getAsset",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "did",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "parent",
+								"type": "address"
+							},
+							{
+								"internalType": "address[]",
+								"name": "children",
+								"type": "address[]"
+							},
+							{
+								"internalType": "bool",
+								"name": "active",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Asset",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "assetDid",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "parent",
+						"type": "address"
+					},
+					{
+						"internalType": "address[]",
+						"name": "children",
+						"type": "address[]"
+					}
+				],
+				"name": "saveAsset",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Smart contract testing\\contracts\\asset_manager.sol": "StorageContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Smart contract testing\\contracts\\asset_manager.sol": {
+			"keccak256": "0x5eaca13c7c7897400a7113156321a5cd05751bf73efc42b0e2787ef9923a4ba0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0351417433e3cd5f31bb4ae7b3bcb91ae099c55797e625ec7e5f10cde6e05175",
+				"dweb:/ipfs/QmT1QzzM6vNY1LNdqXN1PwSU2G3REnNuXLsEawJ1p8P5gQ"
+			]
+		}
+	},
+	"version": 1
+}
